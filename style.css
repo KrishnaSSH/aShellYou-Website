@@ -3,7 +3,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -11,12 +11,15 @@
 
 nav {
   position: absolute;
-  top: 50px;
+  top: 65px;
   right: 10px;
-  background-color: #22272E;
+  background-color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: none;
+  font-size: 30px;
+  left: 0;
+box-sizing: border-box;
 }
 
 nav.show {
@@ -42,6 +45,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
+
+
 img{
   border-radius: 50%;
 max-width: 40%;
@@ -62,4 +67,13 @@ body{
 align-items: center;
   box-sizing: border-box
   
+}
+a {
+    color: #318A62;
+}
+
+#ss {
+border-radius: 0%;
+display: flex; 
+    justify-content: space-between;
 }
