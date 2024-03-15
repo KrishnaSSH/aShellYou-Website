@@ -1,3 +1,7 @@
+* {
+  font-family: 'Sen', sans-serif;
+  font-display: fallback;
+}
 
 #hamburger {
   position: absolute;
@@ -7,13 +11,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+ color: #090909;
 }
 
 nav {
-  position: absolute;
+  
   top: 65px;
   right: 10px;
-  background-color: black;
+  background-color: rgba(6, 6, 6, 0);
   padding: 10px;
   border-radius: 10px;
   display: none;
@@ -37,35 +42,46 @@ nav li {
 }
 
 nav a {
-  color: #ADBAC7;
+  color: #0c0c0c;
   text-decoration: none;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: #318A62
 }
 
 
 
 img{
   border-radius: 50%;
-max-width: 40%;
+max-width: 200px;
   height: auto;
 margin-left: 100px;
   margin-right: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
-  color: #ADBAC7;
-  background-color: #22272E;
+  
+font-size: larger;
+  font-family: 'Sen', sans-serif;
+  color: #161616;
+  background-color: #d1d7eb;
   text-align: "center";
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 align-items: center;
   box-sizing: border-box
+  margin : 0;
+padding: 0;
+text-align: center;
+
   
 }
 a {
@@ -76,4 +92,17 @@ a {
 border-radius: 0%;
 display: flex; 
     justify-content: space-between;
+}
+
+logo{
+font-weight: 600;
+font-size: 30px;
+font-family: Poppins,sans-serif;
+text-align: left;
+
+}
+
+#github{
+border-radius: 0;
+
 }
