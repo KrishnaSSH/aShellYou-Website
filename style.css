@@ -17,13 +17,12 @@
 nav {
   
   top: 65px;
-  right: 10px;
-  background-color: rgba(6, 6, 6, 0);
+  right: 0px;
   padding: 10px;
   border-radius: 10px;
   display: none;
-  font-size: 30px;
-  left: 0;
+  font-size: 40px;
+  margin-left: 20px
 box-sizing: border-box;
 }
 
@@ -35,10 +34,11 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 nav li {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 nav a {
@@ -47,7 +47,6 @@ nav a {
 }
 
 nav a:hover {
-  text-decoration: underline;
   color: #318A62
 }
 
@@ -104,5 +103,14 @@ text-align: left;
 
 #github{
 border-radius: 0;
+
+}
+
+#pfp{
+
+  margin: 80px;
+  box-sizing: border-box;
+    background-color: #f1f1f1;
+}
 
 }
