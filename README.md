@@ -2,5 +2,5 @@
 Official Website of aShellYou 
 https://a-shell-you.vercel.app/
 
- CAUTION
+ CAUTION:
  THIS WEBSITE IS UNDER DEVELOPMENT
