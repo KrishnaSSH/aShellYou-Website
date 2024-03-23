@@ -1,6 +1,5 @@
 * {
   font-family: 'Sen', sans-serif;
-  font-display: fallback;
 }
 
 #hamburger {
@@ -11,19 +10,18 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
- color: #090909;
+  color: #090909;
 }
 
 nav {
-  
   top: 65px;
-  right: 0px;
+  right: 0;
   padding: 10px;
   border-radius: 10px;
   display: none;
   font-size: 40px;
-  margin-left: 20px
-box-sizing: border-box;
+  margin-left: 20px;
+  box-sizing: border-box;
 }
 
 nav.show {
@@ -34,7 +32,6 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 nav li {
@@ -47,75 +44,51 @@ nav a {
 }
 
 nav a:hover {
-  color: #318A62
+  color: #318A62;
 }
 
-
-
-img{
+img {
   border-radius: 50%;
-max-width: 200px;
+  max-width: 200px;
   height: auto;
-margin-left: 100px;
-  margin-right: 100px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 50%;
-
 }
 
-body{
-  
-font-size: larger;
-  font-family: 'Sen', sans-serif;
+body {
+  font-size: larger;
   color: #161616;
   background-color: #d1d7eb;
-  text-align: "center";
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-align-items: center;
-  box-sizing: border-box
-  margin : 0;
-padding: 0;
-text-align: center;
-
-  
+  text-align: center;
+  margin: 20px;
+  box-sizing: border-box;
+  align-items: center;
 }
+
 a {
-    color: #318A62;
+  color: #318A62;
 }
 
 #ss {
-border-radius: 0%;
-display: flex; 
-    justify-content: space-between;
+  border-radius: 0;
+  display: flex; 
+  justify-content: space-between;
 }
 
-logo{
-font-weight: 600;
-font-size: 30px;
-font-family: Poppins,sans-serif;
-text-align: left;
-
+logo {
+  font-weight: 600;
+  font-size: 30px;
+  font-family: Poppins, sans-serif;
+  text-align: left;
 }
 
-#github{
-border-radius: 0;
-
-}
-#fdroid{
-border-radius: 0;
-
+#github, #fdroid {
+  border-radius: 0;
 }
 
-
-#pfp{
-
+#pfp {
   margin: 80px;
   box-sizing: border-box;
-    background-color: #f1f1f1;
-}
-
+  background-color: #f1f1f1;
 }
