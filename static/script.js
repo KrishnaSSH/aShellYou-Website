@@ -1,12 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger') as HTMLElement;
-  const menu = document.querySelector('nav') as HTMLElement;
-
-  hamburger.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.querySelector('nav');
+  
+  hamburger.addEventListener('click', function() {
     menu.classList.toggle('show');
   });
-
-  // Close the menu when a menu item is clicked
+  
   document.querySelectorAll('nav a').forEach(item => {
     item.addEventListener('click', () => {
       menu.classList.remove('show');
