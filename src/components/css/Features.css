@@ -92,7 +92,7 @@
     .feature-item {
         padding: 0.5rem;
         width: 100%;
-        max-width: 90%; /* Adjust to prevent overflow */
+        max-width: 90%; 
         margin: 0 auto;
     }
 
