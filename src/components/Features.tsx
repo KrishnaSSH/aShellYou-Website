@@ -22,7 +22,7 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <div className="features-container">
+    <section id="features" className="features-container"> {/* Added id attribute */}
       <h2 className="features-heading">Features</h2>
       {features.map((feature, index) => (
         <div className="feature-item" key={index}>
@@ -30,7 +30,7 @@ const Features: React.FC = () => {
           <p className="feature-description">{feature.description}</p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

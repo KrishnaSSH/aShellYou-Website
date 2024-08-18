@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="logo">aShell You</div>
       <ul className="nav-links">
         <li><a href="#home" onClick={toggleNavbar}>Home</a></li>
-        <li><a href="#Features" onClick={toggleNavbar}>Features</a></li>
+        <li><a href="#features" onClick={toggleNavbar}>Features</a></li> {/* Changed to lowercase "features" */}
         <li><a href="https://github.com/DP-Hridayan/aShellYou/graphs/contributors" onClick={toggleNavbar}>Team</a></li>
         <li><a href="https://github.com/dp-hridayan/ashellyou/" onClick={toggleNavbar}>Github</a></li>
       </ul>

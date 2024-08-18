@@ -27,10 +27,16 @@
   font-family: 'Poppins', sans-serif;
   color: #bdbcb9; /* Ensure text color is appropriate */
   text-align: right; /* Aligns text to the right within its container */
-  font-size: 2.5rem; /* Adjust size if needed */
+  font-size: 2.8rem; /* Adjust size if needed */
   margin-right: 180px; /* Adjust margin as needed */
   margin-left: 180px; /* Adjust margin as needed */
   font-weight: 700;
+}
+
+/* General mockup styling */
+.mockup {
+  width: auto; /* Keeps the width flexible */
+  height: 500px; /* Adjusts the height to make the image longer */
 }
 
 /* Media query for screens smaller than 768px */
@@ -45,15 +51,17 @@
 
   .mockup {
     margin-top: 80px; /* Reset margin for better spacing control */
-    max-width: 120px;
+    height: 400px; /* Adjust the height for smaller screens */
     margin-bottom: 0;
   }
 
   .text {
-    margin: 80px 0; /* Adds space around the text */
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 800;
+    font-size: 2rem;; /* Adjust font size for smaller screens */
     text-align: center; /* Center text */
-    
   }
 }
 
@@ -64,12 +72,13 @@
   }
 
   .mockup {
-    max-width: 100px;
+    height: 400px; /* Further reduces the height for very small screens */
     margin-top: 80px; /* Reset margin */
   }
 
   .text {
-    font-size: 1.2rem; /* Adjust font size for very small screens */
+    font-weight: 800;
+    font-size: 2rem; /* Adjust font size for very small screens */
     margin-top: 50px 0; /* Further reduced margin */
     margin-left: 30px;
     margin-right: 30px; /* Further reduced margin */

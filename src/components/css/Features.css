@@ -12,7 +12,7 @@
 }
 
 .features-heading {
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 600;
     color: #ffd28d;
     text-align: center;
@@ -23,9 +23,9 @@
     border: 1px solid #281c14;
     padding: 1rem;
     border-radius: 28px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     box-sizing: border-box;
 }
 
@@ -70,7 +70,7 @@
     .feature-item {
         padding: 0.5rem;
         width: 100%;
-        max-width: 230px;
+        max-width: 450px;
         margin: 0 auto;
     }
 
@@ -91,7 +91,7 @@
     .feature-item {
         padding: 0.5rem;
         width: 100%;
-        max-width: 230px;
+        max-width: 300px;
         margin: 0 auto;
     }
 

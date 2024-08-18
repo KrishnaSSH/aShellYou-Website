@@ -11,6 +11,8 @@ const Home = () => (
   <div className="text">Run ADB commands on your device or on other devices</div>
   </div>
 
+  <section id="home" className="home-container"></section>
+
   </>
 );
 
