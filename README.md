@@ -1,8 +1,3 @@
-# aShellYou
-Official Website of aShellYou 
+# aShell You
 
-
-https://a-shell-you.vercel.app/
-
- CAUTION:
- THIS WEBSITE IS UNDER DEVELOPMENT
+official Website of aShell You Written in React by Krishna. 

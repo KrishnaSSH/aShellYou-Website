@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Navbar should have a lower z-index if needed */
+.navbar {
+  position: fixed; /* Ensure navbar stays at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Lower z-index to stay behind content */
+}
+
+/* Ensure container doesn't get overlapped by navbar */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures text is pushed to the far right */
+  flex-direction: row; /* Default direction */
+  padding: 20px 20px 20px 20px; /* Add padding to avoid content touching edges */
+  margin-top: 60px; /* Adjust margin-top to ensure content is below the navbar */
+}
+
+.mockup {
+  flex: 0 0 auto; /* Prevents image from shrinking */
+  max-width: 200px; /* Adjust size as needed */
+  margin: 0; /* Reset margin */
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  color: #bdbcb9; /* Ensure text color is appropriate */
+  text-align: right; /* Aligns text to the right within its container */
+  font-size: 2.5rem; /* Adjust size if needed */
+  margin-right: 20px; /* Adjust margin as needed */
+  font-weight: 700;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks image on top of text */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: center; /* Centers text */
+    padding: 20px; /* Adds padding to the container */
+  }
+
+  .mockup {
+    margin-top: 80px; /* Reset margin for better spacing control */
+    max-width: 120px;
+  }
+
+  .text {
+    margin: 80px 0; /* Adds space around the text */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center text */
+  }
+}
+
+/* Additional media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Less padding on very small screens */
+  }
+
+  .mockup {
+    max-width: 100px;
+    margin-top: 80px; /* Reset margin */
+  }
+
+  .text {
+    font-size: 1.2rem; /* Adjust font size for very small screens */
+    margin-top: 50px 0; /* Further reduced margin */
+    margin: 80px 0; /* Further reduced margin */
+    text-align: center; /* Center text */
+  }
+}
