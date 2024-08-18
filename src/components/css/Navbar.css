@@ -21,7 +21,7 @@
     height: 90px;
     z-index: 1000;
     box-sizing: border-box;
-    transition: padding 0.3s ease;
+    transition: padding 0.3s ease, height 0.3s ease; /* Added height transition */
     backdrop-filter: blur(10px); /* Blur effect */
 }
 
@@ -81,7 +81,7 @@
 
     .navbar {
         padding: 0.5rem;
-        height: auto;
+        height: 90px; /* Ensures consistent height */
     }
 
     .nav-links {

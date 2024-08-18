@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <a href="https://github.com/DP-Hridayan/aShellYou/graphs/contributors" className="footer-link">
           Team
         </a>
-        <a href="home" className="footer-link">
+        <a href="https://ashell.vercel.app" className="footer-link">
           Home
         </a>
 
