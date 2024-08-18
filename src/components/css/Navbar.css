@@ -9,7 +9,7 @@
 }
 
 .navbar {
-    background-color: #231810;
+    background-color: rgba(35, 24, 16, 0.6); /* Semi-transparent dark background */
     color: #ffd28d;
     display: flex;
     justify-content: space-between;
@@ -22,6 +22,7 @@
     z-index: 1000;
     box-sizing: border-box;
     transition: padding 0.3s ease;
+    backdrop-filter: blur(10px); /* Blur effect */
 }
 
 .nav-links {
