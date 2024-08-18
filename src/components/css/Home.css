@@ -3,7 +3,7 @@
 /* Navbar should have a lower z-index if needed */
 .navbar {
   position: fixed; /* Ensure navbar stays at the top */
-  width: 100%; /* Full width */
+  width: 100vw; /* Full width  */ /* Changed 100% to 100vw */
   z-index: 1000; /* Lower z-index to stay behind content */
 }
 
@@ -71,6 +71,12 @@
     padding: 10px; /* Less padding on very small screens */
   }
 
+  .home-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+  }
+
   .mockup {
     height: 400px; /* Further reduces the height for very small screens */
     margin-top: 80px; /* Reset margin */
@@ -83,5 +89,11 @@
     margin-left: 30px;
     margin-right: 30px; /* Further reduced margin */
     text-align: center; /* Center text */
+  }
+}
+
+@media (max-width: 1024px) {
+  .text{
+    margin: 0 10px;
   }
 }
