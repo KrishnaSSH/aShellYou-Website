@@ -9,6 +9,7 @@
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .features-heading {
@@ -70,7 +71,7 @@
     .feature-item {
         padding: 0.5rem;
         width: 100%;
-        max-width: 450px;
+        max-width: 90%; /* Adjust to prevent overflow */
         margin: 0 auto;
     }
 
@@ -91,7 +92,7 @@
     .feature-item {
         padding: 0.5rem;
         width: 100%;
-        max-width: 300px;
+        max-width: 90%; /* Adjust to prevent overflow */
         margin: 0 auto;
     }
 

@@ -1,53 +1,36 @@
 .footer {
-    background-color: #281c14; /* Navbar background color */
-    color: #ffd28d; /* Text color */
-    padding: 40px 20px; /* Increase padding for a bigger bar */
-    text-align: center;
-    position: relative; /* To ensure it's positioned correctly */
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping of links if needed */
-    justify-content: center;
-    gap: 20px; /* Increase gap between links */
-  }
-  
-  .footer-link {
-    color: #ffd28d; /* Link color */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px; /* Adjust font size as needed */
-  }
-  
-  .footer-link:hover {
-    text-decoration: underline;
+  background-color: #281c14; /* Navbar background color */
+  color: #ffd28d; /* Text color */
+  padding: 40px 20px; /* Increase padding for a bigger bar */
+  text-align: center;
+  position: relative; /* To ensure it's positioned correctly */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of links if needed */
+  justify-content: center;
+  gap: 20px; /* Increase gap between links */
+}
+
+.footer-link {
+  color: #ffd28d; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+      padding: 20px 10px; /* Adjust padding on smaller screens */
   }
 
-  
-  .footer {
-    background-color: #593700; /* Different background color for the footer */
-    color: #ffb341; /* Text color */
-    padding: 40px 20px; /* Increased padding for a bigger bar */
-    text-align: center;
-    position: relative; /* To ensure it's positioned correctly */
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping of links if needed */
-    justify-content: center;
-    gap: 20px; /* Increase gap between links */
-  }
-  
   .footer-link {
-    color: #ffd28d; /* Link color */
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px; /* Adjust font size as needed */
+      font-size: 14px; /* Adjust font size on smaller screens */
   }
-  
-  .footer-link:hover {
-    text-decoration: underline;
-  }
-  
+}
