@@ -2,8 +2,8 @@
 
 .logo {
   font-family: Poppins, sans-serif;
-  font-size: 2.5rem;
-  color: #9d7a35;
+  font-size: 3rem;
+  color: #4f4634;
   margin: 1.5rem;
   font-weight: 700;
 }
@@ -53,7 +53,7 @@
 .burger div {
   width: 35px;
   height: 5px;
-  background-color: #ffd28d;
+  background-color: #735d3d;
   margin: 6px;
   transition: all 0.3s ease;
 }
@@ -80,24 +80,28 @@
   .navbar {
     padding: 0.2rem;
     height: 90px;
-    backdrop-filter: blur(20px);
-    background-color: #372c148e;
+    backdrop-filter: blur(5px);
+    background-color: #f9ecdf;
+    
   }
 
   .nav-links {
     position: fixed;
     right: 0;
     top: 0;
-    height: 100vh;
-    width: 80vw;
-    background-color: rgb(50, 34, 22);
-    backdrop-filter: blur(10px);
+    height: 80vh;
+    width: 50vw;
+    background-color: rgba(242, 211, 144, 0.532);
+    backdrop-filter: blur(5px);
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
     padding-top: 60px;
     z-index: 1000;
+    /* border-top-left-radius: 5% 5%;
+    border-bottom-left-radius: 5% 5%; */
+
   }
 
   .nav-links li {
@@ -121,7 +125,7 @@
   }
 
   .navbar.active .burger div {
-    background-color: #ffd28d;
+    background-color: #554122;
   }
 
   .navbar.active .burger .line1 {
