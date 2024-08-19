@@ -87,6 +87,7 @@
         padding: 0.2rem;
         height: 90px; /* Ensures consistent height */
         backdrop-filter: blur(20px); /* Blur effect */
+        background-color: #372c148e;
     }
 
     .nav-links {
