@@ -92,7 +92,7 @@
     height: 80vh;
     width: 50vw;
     background-color: rgb(242, 211, 144);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
