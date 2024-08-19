@@ -5,8 +5,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Features from './components/Features';
 import Footer from "./components/Footer";
-// import Team from './components/Team';
+import Team from './components/Team';
 import Cursor from "./components/cursor";
+import TeamDrag from "./components/Teamdrag";
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       <Cursor/>
       <Home/>
       <Features/>
-      <Analytics />
+      <Team/>
       <Footer/>
-      {/* <Team/> */}
+      <TeamDrag/>
+      <Analytics />
     </div>
   );
 }
