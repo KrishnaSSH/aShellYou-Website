@@ -13,6 +13,11 @@
   opacity: 0.8; /* Default transparency */
 }
 
+
+.virtual-cursor :hover{
+  opacity: 0.5;
+}
+
 /* Hide the cursor on mobile devices */
 @media (max-width: 768px) {
   .virtual-cursor {
