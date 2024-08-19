@@ -4,6 +4,8 @@ import mockupImage from '../assets/mockup.svg';
 
 const Home = () => (
   <>
+  <section id="home" className="home-container">
+
   <div className="container">
   <div className="home-container">
     <img src={mockupImage} alt="Mockup" className="mockup" />
@@ -11,7 +13,7 @@ const Home = () => (
   <div className="text">Run ADB commands on your device or on other devices</div>
   </div>
 
-  <section id="home" className="home-container"></section>
+  </section>
 
   </>
 );
