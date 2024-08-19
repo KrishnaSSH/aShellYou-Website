@@ -11,7 +11,7 @@ const features = [
     description: 'Run commands on other devices via OTG connection.',
   },
   {
-    title: 'Easy To Use with Guides',
+    title: 'Easy To Use ',
     description: 'Provides examples of common ADB commands.',
   },
   {

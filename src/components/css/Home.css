@@ -21,16 +21,17 @@
   margin: 120px;
   width: auto;
   height: 500px;
+  animation: upDown 3s infinite ease-in-out; /* Add the up-down animation here */
 }
 
 .text {
   font-family: 'Poppins', sans-serif;
-  color: #dfd8cf;
+  color: #101927;
   text-align: right;
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   margin-right: 180px;
   margin-left: 180px;
-  font-weight: 700;
+  font-weight: 1000;
 }
 
 @media (max-width: 768px) {
@@ -46,6 +47,7 @@
     margin-top: 80px;
     height: 400px;
     margin-bottom: 0;
+    animation: upDown 3s infinite ease-in-out; /* Ensure animation applies here as well */
   }
 
   .text {
@@ -66,6 +68,7 @@
   .mockup {
     height: 400px;
     margin-top: 100px;
+    animation: upDown 3s infinite ease-in-out; /* Ensure animation applies here as well */
   }
 
   .text {
@@ -75,5 +78,17 @@
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the value for vertical movement */
+  }
+  100% {
+    transform: translateY(0);
   }
 }

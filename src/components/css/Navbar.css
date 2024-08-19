@@ -3,13 +3,13 @@
 .logo {
   font-family: Poppins, sans-serif;
   font-size: 2.5rem;
-  color: #ffd28d;
+  color: #9d7a35;
   margin: 1.5rem;
   font-weight: 700;
 }
 
 .navbar {
-  background-color: rgb(35, 24, 16);
+  background-color: #f9ecdf;
   color: #ffd28d;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   list-style: none;
   font-family: Poppins, sans-serif;
   font-size: 2rem;
-  color: #ffd28d;
+  color: #1c170f;
 }
 
 .nav-links li {
@@ -39,7 +39,7 @@
 }
 
 .nav-links a {
-  color: #ffd28d;
+  color: #4d330c;
   text-decoration: none;
   font-weight: bold;
 }
