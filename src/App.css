@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+/* Add to global.css or Navbar.css */
+html {
+  scroll-behavior: smooth;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

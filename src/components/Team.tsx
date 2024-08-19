@@ -11,7 +11,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="team-section">
+    <div id='team' className="team-section">
       <h2 className="team-heading">Meet Our Team</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (

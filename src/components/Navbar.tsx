@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useState } from 'react';
 import './css/Navbar.css';
 
@@ -14,7 +15,7 @@ const Navbar = () => {
       <ul className="nav-links">
         <li><a href="#home" onClick={toggleNavbar}>Home</a></li>
         <li><a href="#features" onClick={toggleNavbar}>Features</a></li>
-        <li><a href="https://github.com/DP-Hridayan/aShellYou/graphs/contributors" onClick={toggleNavbar}>Team</a></li>
+        <li><a href="#team" onClick={toggleNavbar}>Team</a></li>
         <li><a href="https://github.com/dp-hridayan/ashellyou/" onClick={toggleNavbar}>Github</a></li>
       </ul>
       <div className="burger" onClick={toggleNavbar}>
