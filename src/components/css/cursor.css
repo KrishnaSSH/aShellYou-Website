@@ -1,0 +1,21 @@
+/* VirtualCursor.css */
+.virtual-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #dfc085; /* Adjust your color here */
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.2s ease-out, width 0.3s ease, height 0.3s ease, opacity 0.3s ease; /* Smooth scaling and opacity change */
+  z-index: 10000;
+  opacity: 0.8; /* Default transparency */
+}
+
+/* Hide the cursor on mobile devices */
+@media (max-width: 768px) {
+  .virtual-cursor {
+    display: none;
+  }
+}

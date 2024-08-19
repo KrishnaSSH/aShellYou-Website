@@ -65,10 +65,10 @@
   }
 }
 
-/* Additional media query for screens smaller than 480px */
+
 @media (max-width: 480px) {
   .container {
-    padding: 0px; /* Less padding on very small screens */
+    padding: 0px; 
   }
 
   .mockup {
