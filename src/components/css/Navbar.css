@@ -91,8 +91,8 @@
     top: 0;
     height: 80vh;
     width: 50vw;
-    background-color: rgba(242, 211, 144, 0.532);
-    backdrop-filter: blur(5px);
+    background-color: rgb(242, 211, 144);
+    backdrop-filter: blur(20px);
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
@@ -105,8 +105,8 @@
   }
 
   .nav-links li {
-    font-size: 40px;
-    margin: 1.5rem 0;
+    font-size: 2.7rem;
+    margin: 1rem 0;
     opacity: 0;
     transition: opacity 0.5s ease-in;
   }
