@@ -7,7 +7,7 @@ import Features from './components/Features';
 import Footer from "./components/Footer";
 import Team from './components/Team';
 import Cursor from "./components/cursor";
-import TeamDrag from "./components/Teamdrag";
+
 
 function App() {
   return (
@@ -18,7 +18,6 @@ function App() {
       <Features/>
       <Team/>
       <Footer/>
-      <TeamDrag/>
       <Analytics />
     </div>
   );
