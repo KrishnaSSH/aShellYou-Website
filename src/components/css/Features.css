@@ -22,7 +22,7 @@
 }
 
 .feature-item {
-    border: 1px solid #281c14;
+    border: 1px solid #271509b1;
     padding: 1rem;
     border-radius: 28px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -36,11 +36,12 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 0.5rem;
+
 }
 
 .feature-description {
     font-size: 1rem;
-    color: #555;
+    color: #918585;
     text-align: center;
 }
 
@@ -88,23 +89,26 @@
 
 @media (max-width: 576px) {
     .features-heading {
-        font-size: 3rem;
+        font-size: 4rem;
         padding: 40px;
     }
 
+
+
     .feature-item {
-        padding: 3rem;
+        padding: 3
+        rem;
         width: 100%;
         max-width: 90%; 
         /* margin: 0 auto; */
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .feature-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .feature-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }

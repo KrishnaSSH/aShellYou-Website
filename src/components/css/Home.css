@@ -4,7 +4,7 @@
 .navbar {
   position: fixed; /* Ensure navbar stays at the top */
   width: 100%; /* Full width */
-  z-index: 1000; /* Lower z-index to stay behind content */
+  z-index: 2000; /* Lower z-index to stay behind content */
 }
 
 /* Ensure container doesn't get overlapped by navbar */
@@ -25,7 +25,7 @@
 
 .text {
   font-family: 'Poppins', sans-serif;
-  color: #bdbcb9; /* Ensure text color is appropriate */
+  color: #dfd8cf; /* Ensure text color is appropriate */
   text-align: right; /* Aligns text to the right within its container */
   font-size: 2.8rem; /* Adjust size if needed */
   margin-right: 180px; /* Adjust margin as needed */
@@ -73,11 +73,12 @@
 
   .mockup {
     height: 400px; /* Further reduces the height for very small screens */
-    margin-top: 80px; /* Reset margin */
+    margin-top: 100px; /* Reset margin */
+    
   }
 
   .text {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 2rem; /* Adjust font size for very small screens */
     margin-top: 50px 0; /* Further reduced margin */
     margin-left: 30px;
