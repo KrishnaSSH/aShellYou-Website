@@ -27,10 +27,10 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .footer {
-      padding: 20px 10px; /* Adjust padding on smaller screens */
+      padding: 20px 0px; /* Adjust padding on smaller screens */
   }
 
   .footer-link {
-      font-size: 14px; /* Adjust font size on smaller screens */
+      font-size: 20px; /* Adjust font size on smaller screens */
   }
 }

@@ -56,52 +56,55 @@
     }
 
     .feature-title {
-        font-size: 1.25rem;
+        font-size: 2.5rem;
     }
 
     .feature-description {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
     .features-heading {
-        font-size: 4rem;
+        font-size: 5rem;
+        padding: 40px;
     }
 
     .feature-item {
-        padding: 0.5rem;
+        padding: 5rem;
         width: 100%;
-        max-width: 90%; /* Adjust to prevent overflow */
-        margin: 0 auto;
+        max-width: 90%; 
+        margin-bottom: 50px;
     }
 
     .feature-title {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .feature-description {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .features-heading {
         font-size: 3rem;
+        padding: 40px;
     }
 
     .feature-item {
-        padding: 0.5rem;
+        padding: 3rem;
         width: 100%;
         max-width: 90%; 
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        margin-bottom: 80px;
     }
 
     .feature-title {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
 
     .feature-description {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
