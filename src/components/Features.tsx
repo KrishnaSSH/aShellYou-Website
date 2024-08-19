@@ -22,7 +22,7 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section id="features" className="features-container"> {/* Added id attribute */}
+    <section id="features" className="features-container"> 
       <h2 className="features-heading">Features</h2>
       {features.map((feature, index) => (
         <div className="feature-item" key={index}>

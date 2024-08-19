@@ -1,144 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .logo {
-    font-family: Poppins, sans-serif;
-    font-size: 2.5rem;
-    color: #ffd28d;
-    margin: 1.5rem;
-    font-weight: 700;
+  font-family: Poppins, sans-serif;
+  font-size: 2.5rem;
+  color: #ffd28d;
+  margin: 1.5rem;
+  font-weight: 700;
 }
 
 .navbar {
-    background-color: rgb(35, 24, 16); /* Semi-transparent dark background */
-    color: #ffd28d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.4rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 1000;
-    box-sizing: border-box;
-    transition: padding 0.3s ease, height 0.3s ease; /* Added height transition */
-    backdrop-filter: blur(20px); /* Blur effect */
+  background-color: rgb(35, 24, 16);
+  color: #ffd28d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: padding 0.3s ease, height 0.3s ease;
+  backdrop-filter: blur(20px);
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    font-family: Poppins, sans-serif;
-    font-size: 2rem;
-    color: #ffd28d;
+  display: flex;
+  list-style: none;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  color: #ffd28d;
 }
 
 .nav-links li {
-    margin-left: 1.5rem;
-    margin-right: 50px;
+  margin-left: 1.5rem;
+  margin-right: 50px;
 }
 
 .nav-links a {
-    color: #ffd28d;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ffd28d;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .burger {
-    display: none;
-    cursor: pointer;
-    z-index: 1100;
+  display: none;
+  cursor: pointer;
+  z-index: 1100;
 }
 
 .burger div {
-    width: 35px;
-    height: 5px;
-    background-color: #ffd28d;
-    margin: 6px;
-    transition: all 0.3s ease;
+  width: 35px;
+  height: 5px;
+  background-color: #ffd28d;
+  margin: 6px;
+  transition: all 0.3s ease;
 }
 
-/* Media Query for Tablet and Mobile Devices */
 @media (max-width: 1024px) {
-    .logo {
-        font-size: 2.5rem;
-    }
+  .logo {
+    font-size: 2.5rem;
+  }
 
-    .navbar {
-        padding: 0.5rem;
-    }
+  .navbar {
+    padding: 0.5rem;
+  }
 
-    .nav-links {
-        font-size: 1.5rem;
-    }
+  .nav-links {
+    font-size: 1.5rem;
+  }
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
 
-    
+  .navbar {
+    padding: 0.2rem;
+    height: 90px;
+    backdrop-filter: blur(20px);
+    background-color: #372c148e;
+  }
 
+  .nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: rgb(50, 34, 22);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    padding-top: 60px;
+    z-index: 1000;
+  }
 
-    .logo {
-        font-size: 2.5rem;
-    }
+  .nav-links li {
+    font-size: 40px;
+    margin: 1.5rem 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+  }
 
-    .navbar {
-        padding: 0.2rem;
-        height: 90px; /* Ensures consistent height */
-        backdrop-filter: blur(20px); /* Blur effect */
-        background-color: #372c148e;
-    }
+  .burger {
+    display: block;
+    margin-right: 1rem;
+  }
 
-    .nav-links {
-        position: fixed; /* Changed to fixed to cover the entire viewport */
-        right: 0;
-        top: 0;
-        height: 100vh; /* Full viewport height */
-        width: 80vw; /* Full viewport width */
-        background-color: rgb(50, 34, 22); /* Semi-transparent dark background */
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
-        padding-top: 60px;
-        z-index: 1000; /* Ensure it is above other elements */
-    }
+  .navbar.active .nav-links {
+    transform: translateX(0%);
+  }
 
-    .nav-links li {
-        font-size: 40px;
-        margin: 1.5rem 0;
-        opacity: 0;
-        transition: opacity 0.5s ease-in;
-    }
+  .navbar.active .nav-links li {
+    opacity: 1;
+  }
 
-    .burger {
-        display: block;
-        margin-right: 1rem;
-    }
+  .navbar.active .burger div {
+    background-color: #ffd28d;
+  }
 
-    .navbar.active .nav-links {
-        transform: translateX(0%);
-    }
+  .navbar.active .burger .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-    .navbar.active .nav-links li {
-        opacity: 1;
-    }
+  .navbar.active .burger .line2 {
+    opacity: 0;
+  }
 
-    .navbar.active .burger div {
-        background-color: #ffd28d;
-    }
-
-    .navbar.active .burger .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .navbar.active .burger .line2 {
-        opacity: 0;
-    }
-
-    .navbar.active .burger .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
+  .navbar.active .burger .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }

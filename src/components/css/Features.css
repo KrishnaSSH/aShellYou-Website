@@ -1,108 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .features-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box; /* Prevent overflow */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .features-heading {
-    font-size: 5rem;
-    font-weight: 600;
-    color: #ffd28d;
-    text-align: center;
-    margin: 0 0 1.5rem 0;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #ffd28d;
+  text-align: center;
+  padding-top: 80px;
+  margin: 0 auto 1.5rem auto;
+  width: 90%;
+  max-width: 1200px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item {
-    border: 1px solid #271509b1;
-    padding: 1rem;
-    border-radius: 28px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
+  border: 1px solid #271509b1;
+  padding: 1rem;
+  border-radius: 28px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 1.5rem);
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .feature-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .feature-description {
-    font-size: 1rem;
-    color: #918585;
-    text-align: center;
+  font-size: 1rem;
+  color: #918585;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
-    .features-heading {
-        font-size: 4rem; /* Adjusted size for better scaling */
-    }
+  .features-heading {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 992px) {
-    .features-heading {
-        font-size: 3.5rem; /* Adjusted size for medium screens */
-    }
+  .features-heading {
+    font-size: 3.5rem;
+  }
 
-    .feature-title {
-        font-size: 1.8rem; /* Slightly smaller for better readability */
-    }
+  .feature-title {
+    font-size: 1.8rem;
+  }
 
-    .feature-description {
-        font-size: 1.1rem; /* Adjusted size */
-    }
+  .feature-description {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .features-heading {
-        font-size: 3rem; /* Adjusted to maintain balance */
-        padding: 20px; /* Adjusted padding */
-    }
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-    .feature-item {
-        padding: 2rem; /* Reduced padding for smaller screens */
-        width: 100%;
-        max-width: 90%; 
-        margin-bottom: 20px; /* Reduced margin-bottom */
-    }
+  .features-heading {
+    font-size: 3rem;
+    padding: 0;
+    line-height: 1.3;
+    width: 90%;
+  }
 
-    .feature-title {
-        font-size: 1.6rem;
-    }
+  .feature-item {
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
 
-    .feature-description {
-        font-size: 1.2rem; /* Slight increase for readability */
-    }
+  .feature-title {
+    font-size: 1.6rem;
+  }
+
+  .feature-description {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .features-heading {
-        font-size: 2.5rem; /* Further reduced for very small screens */
-        padding: 20px; /* Reduced padding */
-    }
+  .features-heading {
+    font-size: 2.5rem;
+    width: 90%;
+    line-height: 1.4;
+    padding-top: 80px;
+  }
 
-    .feature-item {
-        padding: 1.5rem; /* Further reduced padding */
-        width: 100%;
-        max-width: 90%; 
-        margin-bottom: 20px; /* Further reduced margin-bottom */
-    }
+  .feature-item {
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
 
-    .feature-title {
-        font-size: 1.5rem; /* Adjusted for very small screens */
-    }
+  .feature-title {
+    font-size: 1.5rem;
+  }
 
-    .feature-description {
-        font-size: 1rem; /* Adjusted for very small screens */
-    }
+  .feature-description {
+    font-size: 1rem;
+  }
 }

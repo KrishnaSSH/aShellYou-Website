@@ -1,57 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Navbar should have a lower z-index if needed */
 .navbar {
-  position: fixed; /* Ensure navbar stays at the top */
-  width: 100%; /* Full width */
-  z-index: 2000; /* Lower z-index to stay behind content */
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
 }
 
-/* Ensure container doesn't get overlapped by navbar */
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures text is pushed to the far right */
-  flex-direction: row; /* Default direction */
-  padding: 20px 20px 20px 20px; /* Add padding to avoid content touching edges */
-  margin-top: 60px; /* Adjust margin-top to ensure content is below the navbar */
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  margin-top: 60px;
 }
 
 .mockup {
-  flex: 0 0 auto; /* Prevents image from shrinking */
-  max-width: 200px; /* Adjust size as needed */
-  margin: 120px; /* Reset margin */
+  flex: 0 0 auto;
+  max-width: 200px;
+  margin: 120px;
+  width: auto;
+  height: 500px;
 }
 
 .text {
   font-family: 'Poppins', sans-serif;
-  color: #dfd8cf; /* Ensure text color is appropriate */
-  text-align: right; /* Aligns text to the right within its container */
-  font-size: 2.8rem; /* Adjust size if needed */
-  margin-right: 180px; /* Adjust margin as needed */
-  margin-left: 180px; /* Adjust margin as needed */
+  color: #dfd8cf;
+  text-align: right;
+  font-size: 2.8rem;
+  margin-right: 180px;
+  margin-left: 180px;
   font-weight: 700;
 }
 
-/* General mockup styling */
-.mockup {
-  width: auto; /* Keeps the width flexible */
-  height: 500px; /* Adjusts the height to make the image longer */
-}
-
-/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stacks image on top of text */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    text-align: center; /* Centers text */
-    padding: 20px; /* Adds padding to the container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
   }
 
   .mockup {
-    margin-top: 80px; /* Reset margin for better spacing control */
-    height: 400px; /* Adjust the height for smaller screens */
+    margin-top: 80px;
+    height: 400px;
     margin-bottom: 0;
   }
 
@@ -60,29 +53,27 @@
     margin-left: 100px;
     margin-right: 100px;
     font-weight: 800;
-    font-size: 2rem;; /* Adjust font size for smaller screens */
-    text-align: center; /* Center text */
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
-
 @media (max-width: 480px) {
   .container {
-    padding: 0px; 
+    padding: 0;
   }
 
   .mockup {
-    height: 400px; /* Further reduces the height for very small screens */
-    margin-top: 100px; /* Reset margin */
-    
+    height: 400px;
+    margin-top: 100px;
   }
 
   .text {
     font-weight: 900;
-    font-size: 2rem; /* Adjust font size for very small screens */
-    margin-top: 50px 0; /* Further reduced margin */
+    font-size: 2rem;
+    margin-top: 50px 0;
     margin-left: 30px;
-    margin-right: 30px; /* Further reduced margin */
-    text-align: center; /* Center text */
+    margin-right: 30px;
+    text-align: center;
   }
 }
