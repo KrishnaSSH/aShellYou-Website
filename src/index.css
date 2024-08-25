@@ -16,6 +16,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  color: rgb(255, 248, 196);
+  background: rgb(77, 53, 1);
+}
+
 
 body {
   /* overflow-y: hidden; Hide vertical scrollbar */
