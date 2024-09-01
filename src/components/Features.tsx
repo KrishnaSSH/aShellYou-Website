@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Features.css'; 
+import './css/Features.css';
 
 const features = [
   {
@@ -10,6 +10,13 @@ const features = [
     title: 'OTG Support',
     description: 'Run commands on other devices via OTG connection.',
   },
+
+  {
+    title: 'Mutiple Modes',
+    description: 'Operates with Multiple operation solutions such as Root/Shizuku .',
+  },
+
+
   {
     title: 'Easy To Use ',
     description: 'Provides examples of common ADB commands.',
@@ -22,7 +29,7 @@ const features = [
 
 const Features: React.FC = () => {
   return (
-    <section id="features" className="features-container"> 
+    <section id="features" className="features-container">
       <h2 className="features-heading">Features</h2>
       {features.map((feature, index) => (
         <div className="feature-item" key={index}>
